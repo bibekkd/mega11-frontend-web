@@ -91,7 +91,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <p className="text-lg md:text-xl text-gray-300 mb-8">
-                Join IPL 2025's most transparent and exciting fantasy league powered by Polygon.
+                {`Join IPL 2025's most transparent and exciting fantasy league powered by Polygon.`}
               </p>
             </motion.div>
 
@@ -482,8 +482,17 @@ function FloatingIcons() {
   )
 }
 
+interface FeatureProps {
+  feature: {
+    icon: React.ElementType;
+    title: string;
+    description: string;
+  }
+  index: number;
+}
+
 // Feature Card Component
-function FeatureCard({ feature, index }) {
+function FeatureCard({ feature, index }: FeatureProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -509,8 +518,18 @@ function FeatureCard({ feature, index }) {
   )
 }
 
+interface StepCardProps {
+  step: {
+    title: string;
+    description: string;
+    highlight:string;
+    icon: React.ElementType;
+  },
+  index: number;
+}
+
 // Step Card Component
-function StepCard({ step, index }) {
+function StepCard({ step, index }: StepCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -548,8 +567,19 @@ function StepCard({ step, index }) {
   )
 }
 
+interface TestimonialProps {
+  testimonial: {
+    name: string;
+    title: string;
+    avatar: string;
+    rating: number;
+    comment: string;
+  }
+  index: number;
+}
+
 // Testimonial Card Component
-function TestimonialCard({ testimonial, index }) {
+function TestimonialCard({ testimonial, index }:TestimonialProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -661,7 +691,7 @@ const testimonials = [
     avatar: "/placeholder.svg?height=40&width=40",
     rating: 5,
     comment:
-      "Mega11 has completely transformed how I experience IPL. The transparency of blockchain combined with the thrill of fantasy cricket is unmatched!",
+      `Mega11 has completely transformed how I experience IPL. The transparency of blockchain combined with the thrill of fantasy cricket is unmatched!`,
   },
   {
     name: "Priya Patel",
@@ -669,7 +699,7 @@ const testimonials = [
     avatar: "/placeholder.svg?height=40&width=40",
     rating: 4,
     comment:
-      "As someone who's into both cricket and crypto, Mega11 is the perfect blend. The NFT marketplace is especially innovative!",
+      `As someone who's into both cricket and crypto, Mega11 is the perfect blend. The NFT marketplace is especially innovative!`,
   },
   {
     name: "Vikram Singh",
@@ -677,7 +707,7 @@ const testimonials = [
     avatar: "/placeholder.svg?height=40&width=40",
     rating: 5,
     comment:
-      "The real-time stats and transparent reward system make this platform stand out from traditional fantasy apps. Can't wait for IPL 2025!",
+      `The real-time stats and transparent reward system make this platform stand out from traditional fantasy apps. Can't wait for IPL 2025!`,
   },
   {
     name: "Ananya Desai",
@@ -685,7 +715,7 @@ const testimonials = [
     avatar: "/placeholder.svg?height=40&width=40",
     rating: 5,
     comment:
-      "The integration with Polygon makes transactions fast and affordable. The user experience is smooth even for those new to blockchain.",
+      `The integration with Polygon makes transactions fast and affordable. The user experience is smooth even for those new to blockchain.`,
   },
 ]
 
