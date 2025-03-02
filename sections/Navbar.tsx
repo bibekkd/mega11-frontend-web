@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { BirdIcon as CricketBall } from "lucide-react"
 import Link from "next/link"
 
-export function Navbar() {
+export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-purple-900/30">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">

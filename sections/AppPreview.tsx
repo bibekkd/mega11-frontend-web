@@ -6,7 +6,7 @@ import Image from "next/image"
 import { BirdIcon as CricketBall } from "lucide-react"
 import { appFeatures } from "@/data/features"
 
-export function AppPreview() {
+export default function AppPreview() {
   return (
     <section className="py-20 bg-gradient-to-b from-black to-purple-950/20">
         <div className="container mx-auto px-4">

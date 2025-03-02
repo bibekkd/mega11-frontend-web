@@ -4,7 +4,7 @@ import { socialLinks, quickLinks, legalLinks } from "@/data/links";
 import Link from "next/link";
 import Polygon from "@/assets/polygon.png"
 
-export function Footer() {
+export default function Footer() {
     return (
         <footer className="py-12 bg-black border-t border-purple-900/30">
             <div className="container mx-auto px-4">

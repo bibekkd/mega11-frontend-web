@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import StepCard from "@/components/cards/StepCard"
 import { steps } from "@/data/steps"
 
-export function HowItWorks() {
+export default function HowItWorks() {
   return (
     <section id="how-it-works" className="py-20 bg-black">
       <div className="container mx-auto px-4">

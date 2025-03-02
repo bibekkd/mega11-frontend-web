@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import FeatureCard from "@/components/cards/FeatureCard"
 import { features } from "@/data/features"
 
-export function Features() {
+export default function Features() {
     return (
         <section id="features" className="py-20 bg-gradient-to-b from-black to-purple-950/30">
             <div className="container mx-auto px-4">

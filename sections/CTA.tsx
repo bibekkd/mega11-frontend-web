@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Trophy } from "lucide-react";
-export function CTA() {
+export default function CTA() {
     return (
         <section className="py-20 bg-gradient-to-b from-black to-purple-950/20">
         <div className="container mx-auto px-4">

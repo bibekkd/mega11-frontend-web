@@ -6,7 +6,7 @@ import TestimonialCard from "@/components/cards/TestimonialCard"
 import { testimonials, communityLinks } from "@/data/links"
 import Link from "next/link";
 
-export function Testimonials() {
+export default function Testimonials() {
     return (
         <section id="testimonials" className="py-20 bg-black">
             <div className="container mx-auto px-4">
