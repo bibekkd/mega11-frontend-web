@@ -1,39 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import {
-  Wallet,
-  Users,
-  Trophy,
-  ArrowRight,
-  BirdIcon as CricketBall,
-  BoltIcon as Bat,
-  StickerIcon as Stadium,
-  Star,
-  Coins,
-  ShoppingBag,
-  ImageIcon,
-  ChevronRight,
-  Github,
-  Twitter,
-  TextIcon as Telegram,
-  DiscIcon as Discord,
-} from "lucide-react"
-import Link from "next/link"
-import Image from "next/image"
 import Navbar from "@/sections/Navbar"
-import TestimonialCard from "@/components/cards/TestimonialCard"
-import { features, appFeatures } from "@/data/features";
-import { steps } from "@/data/steps";
-import { quickLinks, socialLinks, testimonials, communityLinks, legalLinks } from "@/data/links"
-import FeatureCard from "@/components/cards/FeatureCard"
-import StepCard from "@/components/cards/StepCard"
 import Hero from "@/sections/Hero"
 import Features from "@/sections/Features"
 import HowItWorks from "@/sections/HowItWorks"
